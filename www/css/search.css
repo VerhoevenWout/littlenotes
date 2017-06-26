@@ -1,0 +1,211 @@
+.searchpage{
+  text-align: center;
+}
+.greeting{
+  font-family: 'theme-font-main';
+  color: white;
+  font-size: 28px;
+  line-height: 100vh;
+  margin-top: -120px;
+}
+.write-button-container{
+  position: absolute;
+  left: 0;
+  top: 500px;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+.write-button{
+  position: relative;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  color: #FFF;
+  /*Give anchor display: block to give it width and height properties*/
+  display: block;
+  /*width: 80%;*/
+  /*Give anchor margin:auto to center it with block*/
+  margin:auto;
+  font-family: 'theme-font-main';
+  background: rgba(156,216,207,1);
+  background: -moz-linear-gradient(left, rgba(156,216,207,1) 0%, rgba(168,230,241,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(156,216,207,1)), color-stop(100%, rgba(168,230,241,1)));
+  background: -webkit-linear-gradient(left, rgba(156,216,207,1) 0%, rgba(168,230,241,1) 100%);
+  background: -o-linear-gradient(left, rgba(156,216,207,1) 0%, rgba(168,230,241,1) 100%);
+  background: -ms-linear-gradient(left, rgba(156,216,207,1) 0%, rgba(168,230,241,1) 100%);
+  background: linear-gradient(to right, rgba(156,216,207,1) 0%, rgba(168,230,241,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cd8cf', endColorstr='#a8e6f1', GradientType=1 );
+  margin-top: 7px;
+  /*Correct fonts higher line-height*/
+  padding-top: 5px;
+  height: 65px;
+  line-height: 65px;
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px 1px;
+}
+.write-button2{
+  text-align: center;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  margin: auto;
+  font-family: 'theme-font-main';
+  background-color: rgba(233, 250, 251, 0.5);
+  margin-top: 15px;
+  padding-top: 5px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 5px;
+  opacity: 1;
+}
+.searchpage .header{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-family: 'theme-font-main';
+  font-size: 47px;
+  color: rgb(255, 255, 255);
+  transition: all .3s;
+  padding-top: 180px;
+}
+.header-reveal{
+  opacity: 1!important;
+}
+.bottle-note{
+  position: absolute;
+  top: 105vh;
+  left: 20px;
+  right: 20px;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+  transition: all .3s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px 0px;
+}
+.bottle-note-reveal{
+  transform: translateY(-450px)
+}
+.bottle-note-text-counter{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: #c7c7c7;
+  font-family: 'theme-font-main';
+  font-size: 16px;
+  transition: all .3s;
+}
+/*.bottle-note-text-counter-reveal{
+  opacity: 1;
+}*/
+.bottle-note-text-intro{
+  position: relative;
+  color: #3c3c3c;
+  line-height: 0;
+  margin: 40px 20px;
+  font-family: 'theme-font-main';
+  font-size: 35px;
+}
+.bottle-note-text{
+  resize: none;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  border: none;
+  text-align: left;
+  color: #3c3c3c;
+  font-family: 'theme-font-main';
+  font-size: 22px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  z-index: 0;
+}
+.bottle-note-text-ending{
+  text-align: right;
+  padding: 0 20px;
+  color: #3c3c3c;
+  font-family: 'theme-font-main';
+  font-size: 22px;
+  transition: all .3s;
+}
+.searchpage .shake-instruction-position{
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-family: 'theme-font-main';
+  font-size: 30px;
+  color: #3c3c3c;
+  transition: all .3s;
+}
+.shake-instruction-reveal{
+  opacity: 1!important;
+}
+.shake-instruction{
+  /*opacity: 0;
+  position: relative;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-family: 'theme-font-main';
+  font-size: 30px;
+  color: #ffffff!important;
+  z-index: 1;
+  z-index: 999999;
+  background: #ccc;*/
+}
+.drop-button:hover, .drop-button:focus, .drop-button:active{
+  color: #3c3c3c;
+}
+.drop-button-reveal{
+  opacity: 1!important;
+  visibility: visible;
+  transition: all .3s;
+}
+.drop-button-pulse{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  /*background: rgb(233, 250, 251);*/
+  /*background: rgb(166,213,215);*/
+  transition: all .3s;
+}
+.drop-button-pulse-reveal{
+  opacity: 1;
+  visibility: visible;
+}
+.bottle-note-error{
+  opacity: 0;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-family: 'theme-font-main';
+  font-size: 24px;
+  color: white;
+  transition: all .3s;
+}

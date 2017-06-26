@@ -1,0 +1,178 @@
+.send-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .95);
+  z-index: 9999;
+  transition: all .3s;
+}
+.send-overlay-header{
+  position: absolute;
+  top: 65vh;
+  width: 100%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'theme-font-main';
+  font-size: 36px;
+  opacity: 0;
+  transition: all .3s;
+}
+.send-overlay-paragraph{
+  position: absolute;
+  top: 75vh;
+  width: 100%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'theme-font-main';
+  font-size: 18px;
+  opacity: 0;
+  transition: all .3s;
+}
+.send-overlay-error{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .95);
+  z-index: 9999;
+  transition: all .3s;
+}
+.send-overlay-error-paragraph{
+  position: absolute;
+  top: 48vh;
+  width: 100%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'theme-font-main';
+  font-size: 20px;
+  transition: all .3s;
+}
+.reveal-send-overlay-text{
+  opacity: 1!important;
+}
+.reveal-found-overlay-text{
+  opacity: 1!important;
+}
+.st0{fill:#51BBA0;fill-opacity:0.4;} .st1{fill:#51BBA0;fill-opacity:0.1;} .st2{fill:#51BBA0;}
+.st3{fill:rgba(255, 255, 255, 0.62);}
+.st4{fill:rgba(255, 255, 255, 0.12);}
+.st5{fill:#ffffff;}
+
+#completion{
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 130px;
+  height: 125px;
+  z-index: 99999;
+}
+.cirkel{
+  opacity: 0;
+  transform: scale(0.2);
+  transform-origin: initial;
+}
+.check{
+  /*fill: #7ed483;*/
+   opacity: 0;
+   transform: scale(0.2);
+   transform: rotate(40deg);
+}
+.stars{
+  opacity: 0;
+  transform: scale(0.2);
+  transform-origin: initial;
+}
+.mark{
+  /*fill: #7ed483;*/
+   opacity: 0;
+}
+@keyframes reveal{
+  0% { opacity: 0; }
+  10% { opacity: 0.2; }
+  15% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+@keyframes reveal{
+  0%{
+    transform: scale(0.2);
+    transform-origin: initial;
+  }
+  100%{
+    transform: scale(1.0);
+    transform-origin: initial;
+  }
+}
+@keyframes revealStars{
+  0%{
+    transform: scale(0.2);
+    transform-origin: initial;
+  }
+  100%{
+    transform: scale(1);
+    transform-origin: initial;
+  }
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(40deg);
+    transform-origin: initial;
+  }
+  100%{
+    transform: scale(0deg);
+    transform-origin: initial;
+  }
+}
+@keyframes revealCheck{
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.cirkel-animation{
+  animation: reveal 0.4s ease;
+}
+.check-animation{
+  animation: reveal 0.4s ease;
+  animation: revealCheck 2s;
+  animation: rotate 0.8s ease;
+}
+.stars-animation{
+  animation: revealStars 1.0s ease;
+}
+.mark-animation{
+  animation: reveal 0.4s ease;
+  animation: revealCheck 2s;
+}
+
+.found-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .95);
+  z-index: 9999;
+  transition: all .3s;
+}
+.found-overlay-header{
+  position: absolute;
+  top: 65vh;
+  width: 100%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'theme-font-main';
+  font-size: 36px;
+  opacity: 0;
+  transition: all .3s;
+  text-align: center;
+}

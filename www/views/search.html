@@ -1,0 +1,36 @@
+<!-- Links with angular -->
+<!-- <a href="#/">Home</a> | <a href="#/cats">Cats</a> -->
+<!-- href="#/cats" OR ng-click="changeView('cats')"> -->
+<div class="searchpage">
+  <p class="greeting">Hello {{nickname}}</p>
+
+  <div class="pulse">
+    <div class="pulse-shape"></div>
+    <img src="img/logo-bottled-small.png" alt="">
+  </div>
+
+  <div class="write-button-container">
+    <a class="write-button2" ng-click="writeBottleAnimation()" onclick="this.blur();">WRITE A NOTE</a>
+  </div>
+  <h1 class="header">WRITE A NOTE!</h1>
+  <p class="bottle-note-error">{{bottleNoteError}}</p>
+  <div class="bottle-note">
+    <h1 class="bottle-note-text-intro">Dear stranger</h1>
+    <textarea class="bottle-note-text" rows="8" maxrows="8" maxlength="250" ng-trim="false" ng-model="countmodel" data-role="none" ng-keydown="limitTextarea()"></textarea>
+    <p class="bottle-note-text-counter">{{250 - countmodel.length}} left</p>
+    <p class="bottle-note-text-ending">- {{nickname}}</p>
+  </div>
+  <!-- <a class="drop-button" ng-click="submitDrop()"><span>DROP NOTE</span></a>
+  <div class="drop-button-pulse"></div> -->
+  <h2 class="shake-instruction shake-instruction-position">SHAKE TO DROP THIS NOTE</h2>
+
+  <div class="send-overlay hide-loading-overlay fade-loading-overlay">
+    <div ng-include="'partials/send.html'"></div>
+    <h3 class="send-overlay-header">NOTE IS DROPPED</h3>
+    <p class="send-overlay-paragraph">This note is now dropped and waiting for others to find.</p>
+  </div>
+
+  <div class="send-overlay-error hide-loading-overlay fade-loading-overlay">
+    <p class="send-overlay-error-paragraph">Please enable location-service in your settings</p>
+  </div>
+</div>

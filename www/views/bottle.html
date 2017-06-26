@@ -1,0 +1,17 @@
+<div class="bottlepage">
+
+  <div class="bottle bottle-reveal found-bottle">
+    <h1 class="bottle-text-intro">Dear {{nickname}}</h1>
+    <p class="bottle-text">{{bottleText}}</p>
+    <p class="bottle-text-ending">- {{creator}}</p>
+  </div>
+
+  <!-- <a class="go-back-button" ng-click="changeTologgedin()">back</a> -->
+  <a class="login-button2 go-back-button" ng-click="changeTologgedin()"><span>GO BACK</span></a>
+
+  <div class="found-overlay">
+    <div ng-include="'partials/found-bottle.html'"></div>
+    <h3 class="found-overlay-header">YOU FOUND A NOTE!</h3>
+  </div>
+
+</div>

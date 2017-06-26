@@ -1,0 +1,22 @@
+<div class="loginpage">
+  <img class="logo-login" src="img/logo-bottled.png" alt="">
+  <div class="login-container">
+
+    <h1>Login</h1>
+    <form ng-submit="submitLogin()">
+      <input ng-model="email" type="email" name="" value="" placeholder="EMAIL">
+      <input ng-model="password" type="password" name="" value="" placeholder="SECRET">
+      <input type="submit" value="CONTINUE" class="login-button2 login onClickLoad">
+    </form>
+    <p class="loginerror">{{loginerror}}</p>
+    <p class="divider-text">or</p>
+
+    <a ng-click="changeView('register')" class="login-button2"><span>REGISTER</span></a>
+    <a ng-click="changeView('forgot')" class="forgot">forgot password?</a>
+
+  </div>
+  <div class="privacy-container">
+    <p>We respect your privacy.</p>
+    <p>Please review our Terms of Service and Privacy Policy</p>
+  </div>
+</div>

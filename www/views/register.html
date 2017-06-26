@@ -1,0 +1,20 @@
+<div class="loginpage">
+  <img class="logo-login" src="img/logo-bottled.png" alt="">
+  <div class="login-container">
+
+    <h1>Register</h1>
+    <form ng-submit="submitSignup()">
+      <input ng-model="nickname" type="text" name="" value="" placeholder="NICKNAME" id="register-nickname">
+      <input ng-model="email" type="email" name="" value="" placeholder="EMAIL">
+      <input ng-model="password" type="password" name="" value="" placeholder="SECRET">
+      <input type="submit" value="JOIN" class="login-button2 onClickLoad">
+    </form>
+    <p class="loginerror">{{loginerror}}</p>
+    <a ng-click="goBack()" class="login-button2"><span>GO BACK</span></a>
+
+  </div>
+  <div class="privacy-container">
+    <p>We respect your privacy.</p>
+    <p>Please review our Terms of Service and Privacy Policy</p>
+  </div>
+</div>
